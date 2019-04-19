@@ -1,0 +1,412 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: package status</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>status</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/Users/chrisdotcode/code/statuses/status/__init__.py">/Users/chrisdotcode/code/statuses/status/__init__.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Package Contents</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="status.html#Status">Status</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="status.html#Failed">Failed</a>
+</font></dt><dt><font face="helvetica, arial"><a href="status.html#InProgress">InProgress</a>
+</font></dt><dt><font face="helvetica, arial"><a href="status.html#NotStarted">NotStarted</a>
+</font></dt><dt><font face="helvetica, arial"><a href="status.html#Succeeded">Succeeded</a>
+</font></dt></dl>
+</dd>
+</dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Failed">class <strong>Failed</strong></a>(<a href="status.html#Status">Status</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Failed">Failed</a>()&nbsp;-&amp;gt;&nbsp;'<a href="#Failed">Failed</a>'<br>
+&nbsp;<br>
+Represents&nbsp;that&nbsp;the&nbsp;event&nbsp;has&nbsp;failed.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="status.html#Failed">Failed</a></dd>
+<dd><a href="status.html#Status">Status</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Failed-__init__"><strong>__init__</strong></a>(self: 'Failed') -&gt; 'Failed'</dt><dd><tt>Initializes&nbsp;a&nbsp;<a href="#Status">Status</a>,&nbsp;but&nbsp;is&nbsp;actually&nbsp;unused.&nbsp;Instead&nbsp;you&nbsp;should<br>
+initialize&nbsp;one&nbsp;of:<br>
+&nbsp;<br>
+-&nbsp;`<a href="#Failed">Failed</a>`<br>
+-&nbsp;`<a href="#NotStarted">NotStarted</a>`<br>
+-&nbsp;`<a href="#InProgress">InProgress</a>(progress)`<br>
+-&nbsp;`<a href="#Succeeded">Succeeded</a>`</tt></dd></dl>
+
+<dl><dt><a name="Failed-__repr__"><strong>__repr__</strong></a>(self: 'Failed') -&gt; str</dt><dd><tt>Returns&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;this&nbsp;`Failure`&nbsp;`<a href="#Status">Status</a>`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><a name="Failed-__eq__"><strong>__eq__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;two&nbsp;status&nbsp;are&nbsp;equal.<br>
+&nbsp;<br>
+Two&nbsp;statues&nbsp;are&nbsp;considered&nbsp;equal&nbsp;if&nbsp;they&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;<a href="#Status">Status</a>&nbsp;type;<br>
+if&nbsp;both&nbsp;`<a href="#Status">Status</a>`es&nbsp;are&nbsp;`<a href="#InProgress">InProgress</a>`,&nbsp;then&nbsp;their&nbsp;progress&nbsp;values&nbsp;must<br>
+compare&nbsp;equal&nbsp;also.</tt></dd></dl>
+
+<dl><dt><a name="Failed-__ge__"><strong>__ge__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Failed-__gt__"><strong>__gt__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b)&nbsp;and&nbsp;(a&nbsp;!=&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Failed-__le__"><strong>__le__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&lt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(a&nbsp;&lt;&nbsp;b)&nbsp;or&nbsp;(a&nbsp;==&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Failed-__lt__"><strong>__lt__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;one&nbsp;`<a href="#Status">Status</a>`&nbsp;is&nbsp;less&nbsp;than&nbsp;another&nbsp;one.<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>`&nbsp;ordering&nbsp;hierarchy&nbsp;is&nbsp;as&nbsp;follows:<br>
+&nbsp;<br>
+```<br>
+<a href="#Failed">Failed</a>&nbsp;&lt;&nbsp;<a href="#NotStarted">NotStarted</a>&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(x)&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(y)&nbsp;&lt;&nbsp;<a href="#Succeeded">Succeeded</a><br>
+#&nbsp;(where&nbsp;x&nbsp;is&nbsp;&lt;&nbsp;y)<br>
+```<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>.__lte__`,&nbsp;`<a href="#Status">Status</a>.__gt__`,&nbsp;and&nbsp;`<a href="#Status">Status</a>.__gte__`&nbsp;methods&nbsp;are<br>
+autogenerated&nbsp;from&nbsp;this&nbsp;method&nbsp;using&nbsp;`functools.total_ordering`&nbsp;and<br>
+subsequently&nbsp;have&nbsp;no&nbsp;documentation.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>in_progress</strong></dt>
+<dd><tt>Determines&nbsp;if&nbsp;this&nbsp;`Status`&nbsp;is&nbsp;in&nbsp;progress&nbsp;or&nbsp;not.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;different&nbsp;from&nbsp;a&nbsp;comparison&nbsp;to&nbsp;an&nbsp;`InProgress`&nbsp;because&nbsp;said<br>
+comparison&nbsp;would&nbsp;require&nbsp;both&nbsp;`Status`&nbsp;to&nbsp;have&nbsp;the&nbsp;same&nbsp;`progress`<br>
+values&nbsp;(if&nbsp;they&nbsp;are&nbsp;both&nbsp;indeed&nbsp;`InProgress`),&nbsp;while&nbsp;this&nbsp;method<br>
+returns&nbsp;true&nbsp;for&nbsp;any&nbsp;`InProgress`&nbsp;progress&nbsp;value.</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="InProgress">class <strong>InProgress</strong></a>(<a href="status.html#Status">Status</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#InProgress">InProgress</a>(progress:&nbsp;numbers.Real&nbsp;=&nbsp;0)&nbsp;-&amp;gt;&nbsp;'<a href="#InProgress">InProgress</a>'<br>
+&nbsp;<br>
+Represents&nbsp;that&nbsp;the&nbsp;event&nbsp;is&nbsp;in&nbsp;progress.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="status.html#InProgress">InProgress</a></dd>
+<dd><a href="status.html#Status">Status</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="InProgress-__init__"><strong>__init__</strong></a>(self: 'InProgress', progress: numbers.Real = 0) -&gt; 'InProgress'</dt><dd><tt>Creates&nbsp;a&nbsp;new&nbsp;`<a href="#InProgress">InProgress</a>`&nbsp;status.<br>
+&nbsp;<br>
+If&nbsp;the&nbsp;given&nbsp;`progress`&nbsp;is&nbsp;not&nbsp;`0&nbsp;&lt;=&nbsp;progress&nbsp;&lt;=&nbsp;100`,&nbsp;then&nbsp;the&nbsp;value<br>
+is&nbsp;either&nbsp;reduced&nbsp;to&nbsp;100&nbsp;or&nbsp;increased&nbsp;to&nbsp;0.&nbsp;This&nbsp;is&nbsp;done&nbsp;because<br>
+sometime&nbsp;programatic&nbsp;progress&nbsp;updating&nbsp;can&nbsp;end&nbsp;up&nbsp;creating&nbsp;a<br>
+`<a href="#InProgress">InProgress</a>`&nbsp;with&nbsp;a&nbsp;negative&nbsp;or&nbsp;&gt;&nbsp;100&nbsp;progress.</tt></dd></dl>
+
+<dl><dt><a name="InProgress-__repr__"><strong>__repr__</strong></a>(self: 'InProgress') -&gt; str</dt><dd><tt>Returns&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;this&nbsp;`<a href="#InProgress">InProgress</a>`&nbsp;`<a href="#Status">Status</a>`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><a name="InProgress-__eq__"><strong>__eq__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;two&nbsp;status&nbsp;are&nbsp;equal.<br>
+&nbsp;<br>
+Two&nbsp;statues&nbsp;are&nbsp;considered&nbsp;equal&nbsp;if&nbsp;they&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;<a href="#Status">Status</a>&nbsp;type;<br>
+if&nbsp;both&nbsp;`<a href="#Status">Status</a>`es&nbsp;are&nbsp;`<a href="#InProgress">InProgress</a>`,&nbsp;then&nbsp;their&nbsp;progress&nbsp;values&nbsp;must<br>
+compare&nbsp;equal&nbsp;also.</tt></dd></dl>
+
+<dl><dt><a name="InProgress-__ge__"><strong>__ge__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="InProgress-__gt__"><strong>__gt__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b)&nbsp;and&nbsp;(a&nbsp;!=&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="InProgress-__le__"><strong>__le__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&lt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(a&nbsp;&lt;&nbsp;b)&nbsp;or&nbsp;(a&nbsp;==&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="InProgress-__lt__"><strong>__lt__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;one&nbsp;`<a href="#Status">Status</a>`&nbsp;is&nbsp;less&nbsp;than&nbsp;another&nbsp;one.<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>`&nbsp;ordering&nbsp;hierarchy&nbsp;is&nbsp;as&nbsp;follows:<br>
+&nbsp;<br>
+```<br>
+<a href="#Failed">Failed</a>&nbsp;&lt;&nbsp;<a href="#NotStarted">NotStarted</a>&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(x)&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(y)&nbsp;&lt;&nbsp;<a href="#Succeeded">Succeeded</a><br>
+#&nbsp;(where&nbsp;x&nbsp;is&nbsp;&lt;&nbsp;y)<br>
+```<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>.__lte__`,&nbsp;`<a href="#Status">Status</a>.__gt__`,&nbsp;and&nbsp;`<a href="#Status">Status</a>.__gte__`&nbsp;methods&nbsp;are<br>
+autogenerated&nbsp;from&nbsp;this&nbsp;method&nbsp;using&nbsp;`functools.total_ordering`&nbsp;and<br>
+subsequently&nbsp;have&nbsp;no&nbsp;documentation.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>in_progress</strong></dt>
+<dd><tt>Determines&nbsp;if&nbsp;this&nbsp;`Status`&nbsp;is&nbsp;in&nbsp;progress&nbsp;or&nbsp;not.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;different&nbsp;from&nbsp;a&nbsp;comparison&nbsp;to&nbsp;an&nbsp;`InProgress`&nbsp;because&nbsp;said<br>
+comparison&nbsp;would&nbsp;require&nbsp;both&nbsp;`Status`&nbsp;to&nbsp;have&nbsp;the&nbsp;same&nbsp;`progress`<br>
+values&nbsp;(if&nbsp;they&nbsp;are&nbsp;both&nbsp;indeed&nbsp;`InProgress`),&nbsp;while&nbsp;this&nbsp;method<br>
+returns&nbsp;true&nbsp;for&nbsp;any&nbsp;`InProgress`&nbsp;progress&nbsp;value.</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="NotStarted">class <strong>NotStarted</strong></a>(<a href="status.html#Status">Status</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#NotStarted">NotStarted</a>()&nbsp;-&amp;gt;&nbsp;'<a href="#NotStarted">NotStarted</a>'<br>
+&nbsp;<br>
+Represents&nbsp;that&nbsp;the&nbsp;event&nbsp;has&nbsp;not&nbsp;yet&nbsp;been&nbsp;started.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="status.html#NotStarted">NotStarted</a></dd>
+<dd><a href="status.html#Status">Status</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="NotStarted-__init__"><strong>__init__</strong></a>(self: 'NotStarted') -&gt; 'NotStarted'</dt><dd><tt>Initializes&nbsp;a&nbsp;<a href="#Status">Status</a>,&nbsp;but&nbsp;is&nbsp;actually&nbsp;unused.&nbsp;Instead&nbsp;you&nbsp;should<br>
+initialize&nbsp;one&nbsp;of:<br>
+&nbsp;<br>
+-&nbsp;`<a href="#Failed">Failed</a>`<br>
+-&nbsp;`<a href="#NotStarted">NotStarted</a>`<br>
+-&nbsp;`<a href="#InProgress">InProgress</a>(progress)`<br>
+-&nbsp;`<a href="#Succeeded">Succeeded</a>`</tt></dd></dl>
+
+<dl><dt><a name="NotStarted-__repr__"><strong>__repr__</strong></a>(self: 'NotStarted') -&gt; str</dt><dd><tt>Returns&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;this&nbsp;`<a href="#NotStarted">NotStarted</a>`&nbsp;`<a href="#Status">Status</a>`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><a name="NotStarted-__eq__"><strong>__eq__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;two&nbsp;status&nbsp;are&nbsp;equal.<br>
+&nbsp;<br>
+Two&nbsp;statues&nbsp;are&nbsp;considered&nbsp;equal&nbsp;if&nbsp;they&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;<a href="#Status">Status</a>&nbsp;type;<br>
+if&nbsp;both&nbsp;`<a href="#Status">Status</a>`es&nbsp;are&nbsp;`<a href="#InProgress">InProgress</a>`,&nbsp;then&nbsp;their&nbsp;progress&nbsp;values&nbsp;must<br>
+compare&nbsp;equal&nbsp;also.</tt></dd></dl>
+
+<dl><dt><a name="NotStarted-__ge__"><strong>__ge__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="NotStarted-__gt__"><strong>__gt__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b)&nbsp;and&nbsp;(a&nbsp;!=&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="NotStarted-__le__"><strong>__le__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&lt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(a&nbsp;&lt;&nbsp;b)&nbsp;or&nbsp;(a&nbsp;==&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="NotStarted-__lt__"><strong>__lt__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;one&nbsp;`<a href="#Status">Status</a>`&nbsp;is&nbsp;less&nbsp;than&nbsp;another&nbsp;one.<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>`&nbsp;ordering&nbsp;hierarchy&nbsp;is&nbsp;as&nbsp;follows:<br>
+&nbsp;<br>
+```<br>
+<a href="#Failed">Failed</a>&nbsp;&lt;&nbsp;<a href="#NotStarted">NotStarted</a>&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(x)&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(y)&nbsp;&lt;&nbsp;<a href="#Succeeded">Succeeded</a><br>
+#&nbsp;(where&nbsp;x&nbsp;is&nbsp;&lt;&nbsp;y)<br>
+```<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>.__lte__`,&nbsp;`<a href="#Status">Status</a>.__gt__`,&nbsp;and&nbsp;`<a href="#Status">Status</a>.__gte__`&nbsp;methods&nbsp;are<br>
+autogenerated&nbsp;from&nbsp;this&nbsp;method&nbsp;using&nbsp;`functools.total_ordering`&nbsp;and<br>
+subsequently&nbsp;have&nbsp;no&nbsp;documentation.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>in_progress</strong></dt>
+<dd><tt>Determines&nbsp;if&nbsp;this&nbsp;`Status`&nbsp;is&nbsp;in&nbsp;progress&nbsp;or&nbsp;not.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;different&nbsp;from&nbsp;a&nbsp;comparison&nbsp;to&nbsp;an&nbsp;`InProgress`&nbsp;because&nbsp;said<br>
+comparison&nbsp;would&nbsp;require&nbsp;both&nbsp;`Status`&nbsp;to&nbsp;have&nbsp;the&nbsp;same&nbsp;`progress`<br>
+values&nbsp;(if&nbsp;they&nbsp;are&nbsp;both&nbsp;indeed&nbsp;`InProgress`),&nbsp;while&nbsp;this&nbsp;method<br>
+returns&nbsp;true&nbsp;for&nbsp;any&nbsp;`InProgress`&nbsp;progress&nbsp;value.</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Status">class <strong>Status</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>The&nbsp;`<a href="#Status">Status</a>`&nbsp;class&nbsp;represents&nbsp;the&nbsp;status&nbsp;of&nbsp;some&nbsp;event.&nbsp;It&nbsp;is&nbsp;one&nbsp;of<br>
+either:<br>
+&nbsp;<br>
+-&nbsp;`<a href="#Failed">Failed</a>`<br>
+-&nbsp;`<a href="#NotStarted">NotStarted</a>`<br>
+-&nbsp;`<a href="#InProgress">InProgress</a>(progress)`<br>
+-&nbsp;`<a href="#Succeeded">Succeeded</a>`<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="Status-__eq__"><strong>__eq__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;two&nbsp;status&nbsp;are&nbsp;equal.<br>
+&nbsp;<br>
+Two&nbsp;statues&nbsp;are&nbsp;considered&nbsp;equal&nbsp;if&nbsp;they&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;<a href="#Status">Status</a>&nbsp;type;<br>
+if&nbsp;both&nbsp;`<a href="#Status">Status</a>`es&nbsp;are&nbsp;`<a href="#InProgress">InProgress</a>`,&nbsp;then&nbsp;their&nbsp;progress&nbsp;values&nbsp;must<br>
+compare&nbsp;equal&nbsp;also.</tt></dd></dl>
+
+<dl><dt><a name="Status-__ge__"><strong>__ge__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Status-__gt__"><strong>__gt__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b)&nbsp;and&nbsp;(a&nbsp;!=&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Status-__init__"><strong>__init__</strong></a>(self: 'Status')</dt><dd><tt>Initializes&nbsp;a&nbsp;<a href="#Status">Status</a>,&nbsp;but&nbsp;is&nbsp;actually&nbsp;unused.&nbsp;Instead&nbsp;you&nbsp;should<br>
+initialize&nbsp;one&nbsp;of:<br>
+&nbsp;<br>
+-&nbsp;`<a href="#Failed">Failed</a>`<br>
+-&nbsp;`<a href="#NotStarted">NotStarted</a>`<br>
+-&nbsp;`<a href="#InProgress">InProgress</a>(progress)`<br>
+-&nbsp;`<a href="#Succeeded">Succeeded</a>`</tt></dd></dl>
+
+<dl><dt><a name="Status-__le__"><strong>__le__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&lt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(a&nbsp;&lt;&nbsp;b)&nbsp;or&nbsp;(a&nbsp;==&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Status-__lt__"><strong>__lt__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;one&nbsp;`<a href="#Status">Status</a>`&nbsp;is&nbsp;less&nbsp;than&nbsp;another&nbsp;one.<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>`&nbsp;ordering&nbsp;hierarchy&nbsp;is&nbsp;as&nbsp;follows:<br>
+&nbsp;<br>
+```<br>
+<a href="#Failed">Failed</a>&nbsp;&lt;&nbsp;<a href="#NotStarted">NotStarted</a>&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(x)&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(y)&nbsp;&lt;&nbsp;<a href="#Succeeded">Succeeded</a><br>
+#&nbsp;(where&nbsp;x&nbsp;is&nbsp;&lt;&nbsp;y)<br>
+```<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>.__lte__`,&nbsp;`<a href="#Status">Status</a>.__gt__`,&nbsp;and&nbsp;`<a href="#Status">Status</a>.__gte__`&nbsp;methods&nbsp;are<br>
+autogenerated&nbsp;from&nbsp;this&nbsp;method&nbsp;using&nbsp;`functools.total_ordering`&nbsp;and<br>
+subsequently&nbsp;have&nbsp;no&nbsp;documentation.</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>in_progress</strong></dt>
+<dd><tt>Determines&nbsp;if&nbsp;this&nbsp;`Status`&nbsp;is&nbsp;in&nbsp;progress&nbsp;or&nbsp;not.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;different&nbsp;from&nbsp;a&nbsp;comparison&nbsp;to&nbsp;an&nbsp;`InProgress`&nbsp;because&nbsp;said<br>
+comparison&nbsp;would&nbsp;require&nbsp;both&nbsp;`Status`&nbsp;to&nbsp;have&nbsp;the&nbsp;same&nbsp;`progress`<br>
+values&nbsp;(if&nbsp;they&nbsp;are&nbsp;both&nbsp;indeed&nbsp;`InProgress`),&nbsp;while&nbsp;this&nbsp;method<br>
+returns&nbsp;true&nbsp;for&nbsp;any&nbsp;`InProgress`&nbsp;progress&nbsp;value.</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table> <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="Succeeded">class <strong>Succeeded</strong></a>(<a href="status.html#Status">Status</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt><a href="#Succeeded">Succeeded</a>()&nbsp;-&amp;gt;&nbsp;'<a href="#Succeeded">Succeeded</a>'<br>
+&nbsp;<br>
+Represents&nbsp;that&nbsp;an&nbsp;event&nbsp;has&nbsp;succeeded.<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%"><dl><dt>Method resolution order:</dt>
+<dd><a href="status.html#Succeeded">Succeeded</a></dd>
+<dd><a href="status.html#Status">Status</a></dd>
+<dd><a href="builtins.html#object">builtins.object</a></dd>
+</dl>
+<hr>
+Methods defined here:<br>
+<dl><dt><a name="Succeeded-__init__"><strong>__init__</strong></a>(self: 'Succeeded') -&gt; 'Succeeded'</dt><dd><tt>Initializes&nbsp;a&nbsp;<a href="#Status">Status</a>,&nbsp;but&nbsp;is&nbsp;actually&nbsp;unused.&nbsp;Instead&nbsp;you&nbsp;should<br>
+initialize&nbsp;one&nbsp;of:<br>
+&nbsp;<br>
+-&nbsp;`<a href="#Failed">Failed</a>`<br>
+-&nbsp;`<a href="#NotStarted">NotStarted</a>`<br>
+-&nbsp;`<a href="#InProgress">InProgress</a>(progress)`<br>
+-&nbsp;`<a href="#Succeeded">Succeeded</a>`</tt></dd></dl>
+
+<dl><dt><a name="Succeeded-__repr__"><strong>__repr__</strong></a>(self: 'Succeeded') -&gt; str</dt><dd><tt>Returns&nbsp;the&nbsp;string&nbsp;representation&nbsp;of&nbsp;this&nbsp;`<a href="#Succeeded">Succeeded</a>`&nbsp;`<a href="#Status">Status</a>`.</tt></dd></dl>
+
+<hr>
+Methods inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><a name="Succeeded-__eq__"><strong>__eq__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;two&nbsp;status&nbsp;are&nbsp;equal.<br>
+&nbsp;<br>
+Two&nbsp;statues&nbsp;are&nbsp;considered&nbsp;equal&nbsp;if&nbsp;they&nbsp;are&nbsp;of&nbsp;the&nbsp;same&nbsp;<a href="#Status">Status</a>&nbsp;type;<br>
+if&nbsp;both&nbsp;`<a href="#Status">Status</a>`es&nbsp;are&nbsp;`<a href="#InProgress">InProgress</a>`,&nbsp;then&nbsp;their&nbsp;progress&nbsp;values&nbsp;must<br>
+compare&nbsp;equal&nbsp;also.</tt></dd></dl>
+
+<dl><dt><a name="Succeeded-__ge__"><strong>__ge__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Succeeded-__gt__"><strong>__gt__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&gt;&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(not&nbsp;a&nbsp;&lt;&nbsp;b)&nbsp;and&nbsp;(a&nbsp;!=&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Succeeded-__le__"><strong>__le__</strong></a>(self, other, NotImplemented=NotImplemented)</dt><dd><tt>Return&nbsp;a&nbsp;&lt;=&nbsp;b.&nbsp;&nbsp;Computed&nbsp;by&nbsp;@total_ordering&nbsp;from&nbsp;(a&nbsp;&lt;&nbsp;b)&nbsp;or&nbsp;(a&nbsp;==&nbsp;b).</tt></dd></dl>
+
+<dl><dt><a name="Succeeded-__lt__"><strong>__lt__</strong></a>(self: 'Status', other: 'Status') -&gt; bool</dt><dd><tt>Determines&nbsp;if&nbsp;one&nbsp;`<a href="#Status">Status</a>`&nbsp;is&nbsp;less&nbsp;than&nbsp;another&nbsp;one.<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>`&nbsp;ordering&nbsp;hierarchy&nbsp;is&nbsp;as&nbsp;follows:<br>
+&nbsp;<br>
+```<br>
+<a href="#Failed">Failed</a>&nbsp;&lt;&nbsp;<a href="#NotStarted">NotStarted</a>&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(x)&nbsp;&lt;&nbsp;<a href="#InProgress">InProgress</a>(y)&nbsp;&lt;&nbsp;<a href="#Succeeded">Succeeded</a><br>
+#&nbsp;(where&nbsp;x&nbsp;is&nbsp;&lt;&nbsp;y)<br>
+```<br>
+&nbsp;<br>
+The&nbsp;`<a href="#Status">Status</a>.__lte__`,&nbsp;`<a href="#Status">Status</a>.__gt__`,&nbsp;and&nbsp;`<a href="#Status">Status</a>.__gte__`&nbsp;methods&nbsp;are<br>
+autogenerated&nbsp;from&nbsp;this&nbsp;method&nbsp;using&nbsp;`functools.total_ordering`&nbsp;and<br>
+subsequently&nbsp;have&nbsp;no&nbsp;documentation.</tt></dd></dl>
+
+<hr>
+Data descriptors inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>in_progress</strong></dt>
+<dd><tt>Determines&nbsp;if&nbsp;this&nbsp;`Status`&nbsp;is&nbsp;in&nbsp;progress&nbsp;or&nbsp;not.<br>
+&nbsp;<br>
+This&nbsp;is&nbsp;different&nbsp;from&nbsp;a&nbsp;comparison&nbsp;to&nbsp;an&nbsp;`InProgress`&nbsp;because&nbsp;said<br>
+comparison&nbsp;would&nbsp;require&nbsp;both&nbsp;`Status`&nbsp;to&nbsp;have&nbsp;the&nbsp;same&nbsp;`progress`<br>
+values&nbsp;(if&nbsp;they&nbsp;are&nbsp;both&nbsp;indeed&nbsp;`InProgress`),&nbsp;while&nbsp;this&nbsp;method<br>
+returns&nbsp;true&nbsp;for&nbsp;any&nbsp;`InProgress`&nbsp;progress&nbsp;value.</tt></dd>
+</dl>
+<hr>
+Data and other attributes inherited from <a href="status.html#Status">Status</a>:<br>
+<dl><dt><strong>__hash__</strong> = None</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
