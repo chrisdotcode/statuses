@@ -6,6 +6,8 @@ with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "README.md")
     long_description = file.read()
 
 setup(name="status",
+      author="chrisdotcode",
+      author_email="pypi+chris@code.sc",
       url="https://github.com/chrisdotcode/statuses",
       description="The `Status` class represents the status of some event.",
       long_description_content_type="text/markdown",
