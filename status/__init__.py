@@ -94,7 +94,7 @@ class Status:
 class Failed(Status):
     """Represents that the event has failed."""
     def __init__(self: "Failed") -> "Failed":
-        pass
+        self.progress = None
 
     def __repr__(self: "Failed") -> str:
         """Returns the string representation of this `Failure` `Status`."""
@@ -104,7 +104,7 @@ class Failed(Status):
 class NotStarted(Status):
     """Represents that the event has not yet been started."""
     def __init__(self: "NotStarted") -> "NotStarted":
-        pass
+        self.progress = None
 
     def __repr__(self: "NotStarted") -> str:
         """Returns the string representation of this `NotStarted` `Status`."""
@@ -132,7 +132,7 @@ class InProgress(Status):
 class Succeeded(Status):
     """Represents that an event has succeeded."""
     def __init__(self: "Succeeded") -> "Succeeded":
-        pass
+        self.progress = None
 
     def __repr__(self: "Succeeded") -> str:
         """Returns the string representation of this `Succeeded` `Status`."""

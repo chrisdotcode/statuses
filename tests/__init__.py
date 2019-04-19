@@ -21,6 +21,13 @@ class StatusTests(unittest.TestCase):
         self.assertIs(type(InProgress()), InProgress)
         self.assertIs(type(Succeeded()), Succeeded)
 
+        self.assertEqual(Failed().progress, None)
+        self.assertEqual(InProgress(0).progress, 0)
+        self.assertEqual(InProgress(7).progress, 7)
+        self.assertEqual(InProgress(100).progress, 100)
+        self.assertEqual(NotStarted().progress, None)
+        self.assertEqual(Succeeded().progress, None)
+
     def test_repr(self):
         self.assertEqual(repr(Failed()), "Failed()")
         self.assertEqual(repr(NotStarted()), "NotStarted()")
