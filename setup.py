@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 with open(os.path.join(os.path.dirname(os.path.realpath(__file__)), "README.md")) as file:  # noqa
     long_description = file.read()
 
-setup(name="status",
+setup(name="statuses",
       author="chrisdotcode",
       author_email="pypi+chris@code.sc",
       url="https://github.com/chrisdotcode/statuses",
