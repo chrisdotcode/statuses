@@ -1,5 +1,4 @@
 from functools import total_ordering
-from numbers import Real
 
 
 @total_ordering
@@ -13,7 +12,8 @@ class Status:
     - `InProgress(progress)`
     - `Succeeded`
     """
-    def __init__(self: "Status"):
+
+    def __init__(self: "Status") -> None:
         """
         Initializes a Status, but is actually unused. Instead you should
         initialize one of:
@@ -23,14 +23,16 @@ class Status:
         - `InProgress(progress)`
         - `Succeeded`
         """
-        raise NotImplementedError("Please instantiate one of the `Status` "
-                                  "subclasses:\n"
-                                  "\n\t- `Failed`"
-                                  "\n\t- `NotStarted`"
-                                  "\n\t- `InProgress(progress)`"
-                                  "\n\t- `Succeeded`")
+        raise NotImplementedError(
+            "Please instantiate one of the `Status` "
+            "subclasses:\n"
+            "\n\t- `Failed`"
+            "\n\t- `NotStarted`"
+            "\n\t- `InProgress(progress)`"
+            "\n\t- `Succeeded`"
+        )
 
-    def __eq__(self: "Status", other: "Status") -> bool:
+    def __eq__(self: "Status", other: "Status") -> bool:  # type: ignore
         """
         Determines if two status are equal.
 
@@ -42,7 +44,7 @@ class Status:
         other_type = type(other)
 
         if self_type is InProgress and other_type is InProgress:
-            return self.progress == other.progress
+            return self.progress == other.progress  # type: ignore
         else:
             return self_type == other_type
 
@@ -72,7 +74,7 @@ class Status:
         elif self_type is NotStarted and other_type in (InProgress, Succeeded):
             return True
         elif self_type is InProgress and other_type is InProgress:
-            return self.progress < other.progress
+            return self.progress < other.progress  # type: ignore
         elif self_type is InProgress and other_type is Succeeded:
             return True
         else:
@@ -93,7 +95,8 @@ class Status:
 
 class Failed(Status):
     """Represents that the event has failed."""
-    def __init__(self: "Failed") -> "Failed":
+
+    def __init__(self: "Failed") -> None:
         self.progress = None
 
     def __repr__(self: "Failed") -> str:
@@ -103,7 +106,8 @@ class Failed(Status):
 
 class NotStarted(Status):
     """Represents that the event has not yet been started."""
-    def __init__(self: "NotStarted") -> "NotStarted":
+
+    def __init__(self: "NotStarted") -> None:
         self.progress = None
 
     def __repr__(self: "NotStarted") -> str:
@@ -113,7 +117,8 @@ class NotStarted(Status):
 
 class InProgress(Status):
     """Represents that the event is in progress."""
-    def __init__(self: "InProgress", progress: Real = 0) -> "InProgress":
+
+    def __init__(self: "InProgress", progress: int = 0) -> None:
         """
         Creates a new `InProgress` status.
 
@@ -131,7 +136,8 @@ class InProgress(Status):
 
 class Succeeded(Status):
     """Represents that an event has succeeded."""
-    def __init__(self: "Succeeded") -> "Succeeded":
+
+    def __init__(self: "Succeeded") -> None:
         self.progress = None
 
     def __repr__(self: "Succeeded") -> str:

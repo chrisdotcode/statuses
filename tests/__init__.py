@@ -13,7 +13,7 @@ class StatusTests(unittest.TestCase):
             "\n\t- `Failed`"
             "\n\t- `NotStarted`"
             "\n\t- `InProgress(progress)`"
-            "\n\t- `Succeeded`"
+            "\n\t- `Succeeded`",
         )
 
         self.assertIs(type(Failed()), Failed)
@@ -42,11 +42,11 @@ class StatusTests(unittest.TestCase):
         self.assertEqual(NotStarted(), NotStarted())
         self.assertEqual(InProgress(), InProgress())
         self.assertEqual(InProgress(55.7), InProgress(55.7))
-        self.assertEqual(InProgress(44/57), InProgress(44/57))
+        self.assertEqual(InProgress(44 / 57), InProgress(44 / 57))
         self.assertEqual(InProgress(), InProgress(0))
         self.assertEqual(InProgress(-34), InProgress(0))
         self.assertEqual(InProgress(120428), InProgress(100))
-        self.assertEqual(InProgress(12313120428/2343), InProgress(100))
+        self.assertEqual(InProgress(12313120428 / 2343), InProgress(100))
         self.assertEqual(Succeeded(), Succeeded())
 
         self.assertNotEqual(Failed(), NotStarted())
@@ -124,9 +124,9 @@ class StatusTests(unittest.TestCase):
         self.assertFalse(NotStarted().in_progress)
         self.assertFalse(Succeeded().in_progress)
 
-        self.assertTrue(InProgress(-234/27).in_progress)
+        self.assertTrue(InProgress(-234 / 27).in_progress)
         self.assertTrue(InProgress(0).in_progress)
         self.assertTrue(InProgress(55).in_progress)
-        self.assertTrue(InProgress(44/55).in_progress)
+        self.assertTrue(InProgress(44 / 55).in_progress)
         self.assertTrue(InProgress(100).in_progress)
-        self.assertTrue(InProgress(1222/287.23).in_progress)
+        self.assertTrue(InProgress(1222 / 287.23).in_progress)
